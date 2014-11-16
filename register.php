@@ -1,3 +1,15 @@
+<?php
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
+  require('db.php');
+
+  //connect db
+  connect();
+
+  //enter data into db
+  //forward to new user page
+}
+else{
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,7 +31,7 @@
             <div class="container col-xs-4 col-xs-offset-4">
         		<div class="well well-lg">
     	    		<p class="login-element">Sign up with your email address</p>
-    	    		<form role="form">
+    	    		<form action="register.php" method="POST" role="form">
                         <div class="form-group login-element">
     	    			    <input type="text" name="email" placeholder="Email Address">
     	    			</div>
@@ -28,7 +40,7 @@
                         </div>
                         <div class="form-group login-element">
                             <input type="password" name="password" placeholder="Confirm Password">
-                        </div> 
+                        </div>
                         <div class="login-element">
     	    			    <input type="submit" class="btn btn-primary" value="Register">
                         </div>
@@ -38,3 +50,6 @@
         </div>
     </body>
 </html>
+<?php
+}
+?>

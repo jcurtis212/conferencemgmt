@@ -8,7 +8,8 @@
   function readConfig(){
     $file = fopen("dbconfig.json", "r");
     $json = fread($file, filesize("dbconfig.json"));
+    $json = json_decode($json);
 
-    return json;
+    return $json;
   }
 ?>
