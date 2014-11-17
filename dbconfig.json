@@ -1,5 +1,6 @@
 {
-  "host": "db.cs.dal.ca",
-  "user: "justinp",
-  "pass" "B00549827"
+  "host": "localhost",
+  "user": "",
+  "pass": "",
+  "dbname": "test"
 }
