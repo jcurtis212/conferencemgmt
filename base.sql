@@ -3,6 +3,8 @@ CREATE TABLE users (
   username varchar(255) NOT NULL,
   firstname varchar(255) NOT NULL,
   lastname varchar(255) NOT NULL,
+  password varchar(255) NOT NULL,
+  salt varchar(255) NOT NULL,
   hostflag bool NOT NULL,
   PRIMARY KEY (id)
 );
